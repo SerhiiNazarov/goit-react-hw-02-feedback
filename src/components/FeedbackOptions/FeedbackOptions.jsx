@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Feedbacks, Button } from './FeedbackOptions.styled';
+import { ucFirst } from './usFirst';
 
 export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
   return (
@@ -12,7 +13,7 @@ export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
           name={option}
           onClick={onLeaveFeedback}
         >
-          {option}
+          {ucFirst(option)}
         </Button>
       ))}
     </Feedbacks>

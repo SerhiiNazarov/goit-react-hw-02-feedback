@@ -7,5 +7,6 @@ export const Feedbacks = styled.div`
 `;
 
 export const Button = styled.button`
-  background-color: antiquewhite;
+  background-color: rgb(209, 241, 230);
+  border-radius: 5px;
 `;
